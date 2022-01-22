@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let inputArray = [
+        {name: 'Amber', batch: 'Batch 12', likesIceCream: false},
+        {name: 'Pratik', batch: 'Batch 12', likesIceCream: true},
+        {name: 'Charan', batch: 'Batch 11', likesIceCream: false},
+        {name: 'Dhanashree', batch: 'Batch 12', likesIceCream: true},
+        {name: 'Anirban', batch: 'Batch 10', likesIceCream: false}
+        ]
+        
+         let names = inputArray.filter(function (input) {
+           return inputArray.likesIceCream === true && inputArray.Batch === 'Batch 11';
+         }).map(function (input) {
+        return inputArray.name;
+         })
+
+        // console.log("Names who likes ice cream");
+      
+        // names.forEach(function (names) {
+        //     console.log(names);
+        // });
+
+        // let students=inputArray.filter(student=>student.likesIceCream)
+
+        // console.log(students)
+        </script>
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+
